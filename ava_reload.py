@@ -20,7 +20,7 @@ def process_data(telegram_id):
 
     json_data = {
         'additionalTime': 3600,
-        'telegramId': auth,
+        'telegramId': telegram_id,
     }
 
     response = requests.post('https://bot.ethernity.game/api/add-mining-time', headers=headers, json=json_data)
